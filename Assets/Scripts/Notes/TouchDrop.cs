@@ -361,12 +361,23 @@ public class TouchDrop : TouchBase
     {
         /// <summary>
         /// AreaDistance: 
-        /// C:   0
+        /// C:   0/1.25
         /// E:   3.1
         /// B:   2.21
         /// A,D: 4.8
         /// </summary>
-        if (area == 'C') return Vector3.zero;
+        if (area == 'C')
+        {
+            if (index == 0)
+            {
+                return Vector3.zero;
+            }
+            else
+            {
+                var angle = -index * (Mathf.PI / 4) + Mathf.PI * 6 / 8;
+                return new Vector3(Mathf.Cos(angle), Mathf.Sin(angle)) * 1.25f;
+            }
+        }
         if (area == 'B')
         {
             var angle = -index * (Mathf.PI / 4) + Mathf.PI * 5 / 8;
