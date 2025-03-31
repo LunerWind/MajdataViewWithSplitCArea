@@ -1,4 +1,4 @@
-# A Customized(and ver buggy) Version of:
+# A Customized(and very buggy) Version of:
 
 # <img src="https://user-images.githubusercontent.com/51612155/226972003-1928ce4d-56ce-497d-b958-d6aec38a602c.png" width="100px"> MajdataView&Edit
 
